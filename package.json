@@ -19,7 +19,8 @@
     "lint": "eslint .",
     "test": "jest",
     "livetest": "jest --watch",
-    "codereplication": "node ocapi/job/code.js"
+    "codereplication": "node ocapi/job/code.js",
+    "token": "node ocapi/basicAuth.js"
   },
   "repository": {
     "type": "git",

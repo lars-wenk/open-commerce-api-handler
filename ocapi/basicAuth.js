@@ -19,6 +19,7 @@ exports.getToken = () =>
     timeout: 5000,
   })
   .then((outcome) => {
+    console.log(outcome.access_token);
     return outcome.access_token;
   })
   .catch((err) => {
