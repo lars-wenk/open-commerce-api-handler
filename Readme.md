@@ -54,6 +54,9 @@ Adding a Data-Ressource in the Open Commerce API Settings like this:
 4. Set a Workflow ID and paste the process ID
 5. Paste the Workflow ID in the config/ocapi.json 
 
-
+now run the following command:
+```
+npm run codereplication
+```
 
 more instructions and invocations comming soon..
