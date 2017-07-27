@@ -30,7 +30,7 @@ You must have nods.js (> Vers.8) and npm installed to run this app. After this, 
 npm install
 ```
 
-## Job Execution for execution a code replication
+## Code Replication
 
 ### Data Ressources
 Adding a Data-Ressource in the Open Commerce API Settings like this:
@@ -52,11 +52,13 @@ Adding a Data-Ressource in the Open Commerce API Settings like this:
 2. Switch to Tab "Step Configurator"
 3. Add a workflow and select the "ExecutePreconfiguredCodeReplicationProcess"
 4. Set a Workflow ID and paste the process ID
-5. Paste the Workflow ID in the config/ocapi.json 
+5. Paste the Workflow ID in the config/ocapi.json
 
 now run the following command:
 ```
 npm run codereplication
 ```
 
-more instructions and invocations comming soon..
+## Products
+
+comming soon..
