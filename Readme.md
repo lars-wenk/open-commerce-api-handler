@@ -32,6 +32,8 @@ npm install
 
 ## Code Replication
 
+![Process](job_process.png)
+
 ### Data Ressources
 Adding a Data-Ressource in the Open Commerce API Settings like this:
 ```
