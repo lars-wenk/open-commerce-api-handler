@@ -1,7 +1,9 @@
 {
-  "ocapi_version": "v17_4",
   "hostname": "",
+  "username": "",
+  "password": "",
+  "codeversion": "",
   "client_id": "",
-  "basicAuth": "",
+  "client_password": "",
   "job_id": ""
 }

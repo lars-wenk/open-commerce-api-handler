@@ -2,6 +2,7 @@
 
 const rp = require('request-promise-native');
 const config = require('../config/ocapi.json');
+const basicAuthHash = require('../config/encodeBasicAuth');
 
 const options = {
   method: 'POST',
@@ -9,7 +10,7 @@ const options = {
   rejectUnauthorized: false,
   json: true,
   headers: {
-    Authorization: `Basic ${config.basicAuth}`,
+    Authorization: `Basic ${basicAuthHash.hash}`,
     'Content-Type': 'application/x-www-form-urlencoded',
   },
   form: {
@@ -18,8 +19,8 @@ const options = {
   timeout: 5000,
 };
 
-exports.getToken = (dynOptions) =>
-  rp(Object.assign(options, (dynOptions || {}) ))
+exports.getToken = dynOptions =>
+  rp(Object.assign(options, (dynOptions || {})))
   .then((outcome) => {
     console.log(outcome);
     return outcome;
